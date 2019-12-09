@@ -52,9 +52,9 @@
       {% if hasSearch %}
         <li class="menu-item menu-item-search">
           {% if theme.swiftype_key %}
-            <a href="javascript:;" class="st-search-show-outputs">
+            <a href="javascript:;" target="" class="st-search-show-outputs">
           {% elseif theme.local_search.enable || theme.algolia_search.enable %}
-            <a href="javascript:;" class="popup-trigger">
+            <a href="javascript:;" target="" class="popup-trigger">
           {% endif %}
             {% if theme.menu_icons.enable %}
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />

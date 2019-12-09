@@ -100,7 +100,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:zhaoxiaochen/zhaoxiaochen.github.io.git
+  repo: https://github.com/zhaoxiaochen/zhaoxiaochen.github.io.git
   branch: master
 
 search:

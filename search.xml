@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>首次提交测试</title>
+    <url>/post/b5b0d746.html</url>
+    <content><![CDATA[<p>在文章Hexo 修改博客站点标题中我们介绍了如何配置博客的标题，但是发现如果设置成中文会有乱码的问题。</p>
+<p>站点配置文件_config.yml原来的编码为ANSI，不支持中文，只需将配置文件_config.yml保存为UTF-8编码格式即可。</p>
+<p>可以用EditPlus双击底部编码，在弹出的对话框中选择UTF-8编码</p>
+<p>文章最后发布于: 2019-06-22 01:02:49<br>hexo博客的乱码问题<br>阅读数 2577</p>
+<p>以txt方式打开文件，然后另存为的时候，以utf-8的编码格式保存。<br>博文<br>来自： AinUser的博客</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">initAffix</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> headerOffset = getHeaderOffset(),</span></pre></td></tr><tr><td class="code"><pre><span class="line">        footerOffset = getFooterOffset(),</span></pre></td></tr><tr><td class="code"><pre><span class="line">        sidebarHeight = $(<span class="string">'#sidebar'</span>).height() + NexT.utils.getSidebarb2tHeight(),</span></pre></td></tr><tr><td class="code"><pre><span class="line">        contentHeight = $(<span class="string">'#content'</span>).height();</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="comment">// Not affix if sidebar taller then content (to prevent bottom jumping).</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span> (headerOffset + sidebarHeight &lt; contentHeight) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      sidebarInner.affix(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        offset: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">          top: headerOffset - CONFIG.sidebar.offset,</span></pre></td></tr><tr><td class="code"><pre><span class="line">          bottom: footerOffset</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr></table></figure>
+<p>hexo博客Yilia主题首页菜单中文乱码解决方案<br>阅读数 4029</p>
+<p>方案一：菜单设置成中文显示，编辑博客根目录下的_config.yml文件设置language字段如下:language:zh-Hans或者anguage:zh-CN取决于你的主题theme目录下的la…<br>博文<br>来自： AomanHao的博客<br>解决hexo博客的乱码问题<br>阅读数 1万+</p>
+<p>将博客文件保存为UTF-8即可解决问题。方法：<br>博文<br>来自： 记录本<br>Hexo 解决网站名中文乱码<br>阅读数 1947</p>
+<p>这是因为站点配置文件没有使用utf-8编码造成的，所以在站点配置文件_config.yml中写中文网站名，然后把站点配置文件保存为utf-8格式。例如：#Sitetitle:蓝生的博客subtitle…<br>博文<br>来自： 小蓝的博客</p>
+<p>hexo博客归档页面archives乱码<br>阅读数 66</p>
+<p>这里写自定义目录标题操作步骤操作步骤点击头像下方的日志：2.导航栏显示乱码无法访问：只有点击“日志”会出现此问题，点击“归档”标签则正常显示求解答？╥﹏╥……<br>博文<br>来自： luxiongzuishuai的博客<br>hexo博客某些神奇的地方乱码<br>03-26<br>-问答<br>Hexo 修改博客站点标题<br>阅读数 698</p>
+<p>SiteSetting Description title Thetitleofyourwebsite subtitle Thesubtitleofyourwebsite descr…<br>博文<br>来自： 野猿新一<br>搭建Hexo博客（Next主题）中踩过的坑<br>阅读数 9014</p>
+<p>HexoNextgithub主页：<a href="https://github.com/iissnan/hexo-theme-next官网地址：http://theme-next.iissnan.com/一篇比较详细" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next官网地址：http://theme-next.iissnan.com/一篇比较详细</a>…<br>博文<br>来自： wuseyukui的专栏<br>解决hexo博客乱码问题<br>阅读数 999</p>
+<p>解决hexo博客乱码好不容易解决无法访问的问题，结果打开网站是乱码？？？excuseme?解决办法将文件目录下的_config.yml保存为utf-8格式（或者unicode格式）将新添加的md文件也…<br>博文<br>来自： qq_41220484的博客<br>Hexo 修改博客站点标题 - 野猿新一 - CSDN博客<br>11-11</p>
+<p>解决hexo博客乱码问题 - qq_41220484的博客 - CSDN博客<br>11-24</p>
+<p>Hexo博客NexT主题下添加分类、标签、关于菜单项<br>阅读数 1608</p>
+<p>HexoNexT主题下默认有首页和归档两个菜单，我们还可以开启其他菜单项，比如分类、标签、关于首先打开主题下的配置文件_config.yml，然后搜索menu找到如下配置项，将about、tags、c…<br>博文<br>来自： 野猿新一<br>hexo博客Yilia主题首页菜单中文乱码解决方案 - AomanHa…_CSDN博客<br>11-10</p>
+<p>hexo博客的乱码问题 - AinUser的博客 - CSDN博客<br>————————————————<br>版权声明：本文为CSDN博主「野猿新一」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/mqdxiaoxiao/article/details/93256931" target="_blank" rel="noopener">https://blog.csdn.net/mqdxiaoxiao/article/details/93256931</a></p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+</search>

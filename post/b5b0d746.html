@@ -123,16 +123,18 @@
 
 
 
-<meta name="description" content="在文章Hexo 修改博客站点标题中我们介绍了如何配置博客的标题，但是发现如果设置成中文会有乱码的问题。 站点配置文件_config.yml原来的编码为ANSI，不支持中文，只需将配置文件_config.yml保存为UTF-8编码格式即可。 可以用EditPlus双击底部编码，在弹出的对话框中选择UTF-8编码 文章最后发布于: 2019-06-22 01:02:49hexo博客的乱码问题阅读数 2">
+<meta name="description" content="在文章Hexo 修改博客站点标题中我们介绍了如何配置博客的标题，但是发现如果设置成中文会有乱码的问题。 站点配置文件_config.yml原来的编码为ANSI，不支持中文，只需将配置文件_config.yml保存为UTF-8编码格式即可。 可以用EditPlus双击底部编码，在弹出的对话框中选择UTF-8编码  文章最后发布于: 2019-06-22 01:02:49hexo博客的乱码问题阅读数">
 <meta name="keywords" content="杂记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="首次提交测试">
 <meta property="og:url" content="http:&#x2F;&#x2F;zhaoxiaochen.github.io&#x2F;post&#x2F;b5b0d746.html">
 <meta property="og:site_name" content="修齐">
-<meta property="og:description" content="在文章Hexo 修改博客站点标题中我们介绍了如何配置博客的标题，但是发现如果设置成中文会有乱码的问题。 站点配置文件_config.yml原来的编码为ANSI，不支持中文，只需将配置文件_config.yml保存为UTF-8编码格式即可。 可以用EditPlus双击底部编码，在弹出的对话框中选择UTF-8编码 文章最后发布于: 2019-06-22 01:02:49hexo博客的乱码问题阅读数 2">
+<meta property="og:description" content="在文章Hexo 修改博客站点标题中我们介绍了如何配置博客的标题，但是发现如果设置成中文会有乱码的问题。 站点配置文件_config.yml原来的编码为ANSI，不支持中文，只需将配置文件_config.yml保存为UTF-8编码格式即可。 可以用EditPlus双击底部编码，在弹出的对话框中选择UTF-8编码  文章最后发布于: 2019-06-22 01:02:49hexo博客的乱码问题阅读数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-09T06:27:04.216Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;zhaoxiaochen.github.io&#x2F;post&#x2F;b5b0d746&#x2F;assets&#x2F;image-20191210112335560.png">
+<meta property="og:updated_time" content="2019-12-10T03:23:52.460Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;zhaoxiaochen.github.io&#x2F;post&#x2F;b5b0d746&#x2F;assets&#x2F;image-20191210112335560.png">
 
 
 
@@ -442,6 +444,7 @@
         <p>在文章Hexo 修改博客站点标题中我们介绍了如何配置博客的标题，但是发现如果设置成中文会有乱码的问题。</p>
 <p>站点配置文件_config.yml原来的编码为ANSI，不支持中文，只需将配置文件_config.yml保存为UTF-8编码格式即可。</p>
 <p>可以用EditPlus双击底部编码，在弹出的对话框中选择UTF-8编码</p>
+<p><img src="/post/b5b0d746/assets/image-20191210112335560.png" alt="image-20191210112335560"></p>
 <p>文章最后发布于: 2019-06-22 01:02:49<br>hexo博客的乱码问题<br>阅读数 2577</p>
 <p>以txt方式打开文件，然后另存为的时候，以utf-8的编码格式保存。<br>博文<br>来自： AinUser的博客</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">initAffix</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> headerOffset = getHeaderOffset(),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        footerOffset = getFooterOffset(),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        sidebarHeight = $(<span class="string">'#sidebar'</span>).height() + NexT.utils.getSidebarb2tHeight(),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        contentHeight = $(<span class="string">'#content'</span>).height();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// Not affix if sidebar taller then content (to prevent bottom jumping).</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">if</span> (headerOffset + sidebarHeight &lt; contentHeight) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">      sidebarInner.affix(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        offset: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">          top: headerOffset - CONFIG.sidebar.offset,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">          bottom: footerOffset</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr></table></figure>

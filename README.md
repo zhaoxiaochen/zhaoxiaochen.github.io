@@ -8,9 +8,9 @@
 
 2. 在集成过程中发现了一个local search 的一个缺陷，在点击搜索时每次都会打开一个新的页面。很是不方便。
 
-需要修改模板，**themes\next\layout\\_partials\header.swig**，一共需要修改两处
+   需要修改模板，**themes\next\layout\\_partials\header.swig**，一共需要修改两处
 
-![image-20191206175704949](https://github.com/zhaoxiaochen/zhaoxiaochen.github.io/blob/master/assets/image-20191206175704949.png?raw=true)
+   ![image-20191206175704949]( https://raw.githubusercontent.com/zhaoxiaochen/zhaoxiaochen.github.io/master/assets/image-20191206175704949.png )
 
 3. 关于博客markdown文件插入图片时迁移问题为这个博客的静态文件托管在github上，但是如果想要迁到CSDN或其他渠道那么图片显示又是一个问题，这个网上有很多其他的方案，但是总感觉有点不适合我，那就直接用代码自己来解决一下。
 
@@ -26,17 +26,17 @@
 
       1. 打开**文件**->**偏好设置**->**图像**
 
-      ![image-20191211111939496](https://github.com/zhaoxiaochen/zhaoxiaochen.github.io/blob/master/assets/image-20191211111939496.png?raw=true)
+      ![image-20191211111939496](https://raw.githubusercontent.com/zhaoxiaochen/zhaoxiaochen.github.io/master/assets/image-20191211111939496.png?raw=true)
 
       2. 粘贴一张图片到md文件中会创建一个新的文件夹
 
-         ![image-20191211112055287](https://github.com/zhaoxiaochen/zhaoxiaochen.github.io/blob/master/assets/image-20191211112055287.png?raw=true)
+         ![image-20191211112055287](https://raw.githubusercontent.com/zhaoxiaochen/zhaoxiaochen.github.io/master/assets/image-20191211112055287.png?raw=true)
 
    2. 然后我们修改发布脚本
 
       1. 打开文件目录找到**themes\next\scripts\merge-configs.js**
 
-         ![image-20191211112414037](https://github.com/zhaoxiaochen/zhaoxiaochen.github.io/blob/master/assets/image-20191211112414037.png?raw=true)
+         ![image-20191211112414037](https://raw.githubusercontent.com/zhaoxiaochen/zhaoxiaochen.github.io/master/assets/image-20191211112414037.png?raw=true)
 
       2. 实现hexo的生命周期方法**deployBefore**该方法会在执行**hexo deploy**前执行，新建该方法
 

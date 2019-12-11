@@ -118,4 +118,25 @@ hexo.on('deployBefore',function(){
   hexo.log.info("开始处理Markdown的图片链接到远程");
   hexo.log.info("远程==>"+gitRemod);
   deploy_start();
+  delFile();
 })
+
+let delFile= ()=>{
+  let path = "./public/work/"
+  FS.readdirSync(path).map((file) => {
+    FS.unlink(path+`/${file}`,(err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log('delete ok');
+      }
+    });
+  });
+  FS.rmdir(path,(err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log('ok');
+    }
+  });
+}

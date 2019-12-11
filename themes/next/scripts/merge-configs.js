@@ -7,7 +7,7 @@ var readline = require('readline');
 
 var end = "?raw=true";
 var dirfath = './source/_posts/';
-var gitRemod = "https://github.com/zhaoxiaochen/zhaoxiaochen.github.io/blob/master/assets/"
+var gitRemod = "https://raw.githubusercontent.com/zhaoxiaochen/zhaoxiaochen.github.io/master/assets/"
 
 //读取文件，并且替换文件中指定的字符串
 let replaceFile = function(filePath){
@@ -32,9 +32,9 @@ function read_file(path,callback){
       if(imgUrl ){
         imgUrl = imgUrl[1]
         let remonUrl = imgUrl.replace('../assets/',gitRemod)
-        if(remonUrl.indexOf(end)===-1){
-          remonUrl+=end
-        }
+        // if(remonUrl.indexOf(end)===-1){
+        //   remonUrl+=end
+        // }
         line = line.replace(imgUrl,remonUrl);
         hexo.log.info(imgUrl);
         hexo.log.info("          ↓            ");

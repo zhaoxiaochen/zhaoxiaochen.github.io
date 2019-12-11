@@ -1,8 +1,7 @@
 /* global hexo */
-var marked = require('marked'); //md转html模块
+
 var merge = require('./merge');
 var FS = require('fs');
-var path = require('path')
 const chalk = require('chalk');
 var readline = require('readline');
 

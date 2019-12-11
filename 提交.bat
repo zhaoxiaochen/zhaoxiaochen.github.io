@@ -1,3 +1,3 @@
 git add .
-git commit -m '新版本发布'
+git commit -m 新版本发布
 git push origin dev
